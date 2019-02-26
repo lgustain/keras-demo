@@ -82,7 +82,7 @@ model.add(keras.layers.Embedding(vocab_size, 16))
 model.add(keras.layers.GlobalAveragePooling1D())
 
 # This fixed-length output vector is piped through a fully-connected layer with 16 hidden units.
-model.add(keras.layers.Dense(16, activation=tf.nn.relu))
+model.add(keras.layers.Dense(25, activation=tf.nn.relu))
 
 # The last layer is densely connected with a single output node. Using the sigmoid activation function,
 # this value is a float between 0 and 1, representing a probability, or confidence level.
